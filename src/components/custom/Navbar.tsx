@@ -5,7 +5,7 @@ import MobileNav from "@/components/custom/MobileNav";
 
 const NavbarComponent = () => {
   return (
-    <nav className="fixed flex-between z-50 w-full bg-blue-900 px-6 py-4 lg:px-10">
+    <nav className="fixed flex-between z-50 w-full bg-[#323538] px-6 py-4 lg:px-10">
       <Link href="/" className="flex items-center gap-1">
         <Image
           src="/icons/logo.svg"

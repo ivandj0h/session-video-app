@@ -11,7 +11,7 @@ const SidebarComponent = () => {
   const pathname = usePathname();
 
   return (
-    <section className="sticky bg-black top-0 left-0 flex h-screen w-fit flex-col justify-between p-6 pt-28 text-white max-sm:hidden lg:w-[264px]">
+    <section className="sticky bg-[#131619] top-0 left-0 flex h-screen w-fit flex-col justify-between p-6 pt-28 text-white max-sm:hidden lg:w-[264px] border-r border-[#313235]">
       <div className="flex flex-1 flex-col gap-6">
         {sidebarLinks.map((link) => {
           const isActive =
