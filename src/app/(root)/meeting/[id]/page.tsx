@@ -1,7 +1,7 @@
 import React from "react";
 
-const MeetingPage = () => {
-  return <div>MeetingPage</div>;
+const MeetingPage = ({ params }: { params: { id: string } }) => {
+  return <div>Meeting Room: #{params.id}</div>;
 };
 
 export default MeetingPage;
