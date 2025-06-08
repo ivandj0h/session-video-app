@@ -17,11 +17,17 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <ClerkProvider
         appearance={{
+          layout: {
+            logoImageUrl: "/icons/logo.svg",
+            socialButtonsVariant: "iconButton",
+          },
           variables: {
             colorPrimary: "#0070f3",
             colorText: "#ffffff",
-            colorBackground: "#141619",
+            colorBackground: "#000000",
             colorDanger: "#ff0000",
+            colorInputBackground: "#1f2125",
+            colorInputText: "#ffffff",
           },
         }}
         // Add your Clerk frontend API key here
