@@ -21,10 +21,11 @@ const SidebarComponent = () => {
               href={link.route}
               key={link.label}
               className={cn(
-                "flex gap-4 items-center p-4 rounded-lg justify-start",
+                "flex gap-4 items-center p-4 rounded-lg justify-start transition-colors duration-200",
                 {
-                  "bg-blue-400 text-blue-900": isActive,
-                }
+                  "bg-blue-400 text-white": isActive,
+                },
+                !isActive && "hover:bg-[#313335] hover:text-white"
               )}
             >
               <Image
@@ -32,10 +33,9 @@ const SidebarComponent = () => {
                 alt={link.label}
                 width={24}
                 height={24}
-                className={cn("w-6 h-6", {
-                  "filter-none": !isActive,
-                  "filter invert": isActive,
-                })}
+                className="w-6 h-6"
+                style={{ filter: "brightness(0) invert(1)" }}
+                suppressHydrationWarning
               />
               <p className="text-lg font-semibold max-lg:hidden">
                 {link.label}
