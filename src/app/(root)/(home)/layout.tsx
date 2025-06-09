@@ -1,6 +1,12 @@
 import React, { ReactNode } from "react";
 import NavBar from "@/components/custom/Navbar";
 import Sidebar from "@/components/custom/Sidebar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Session Video App",
+  description: "Video Call App maintained by Delta Team",
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
